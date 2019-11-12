@@ -1,0 +1,36 @@
+{
+  "playlistCollection": [
+    {
+      "id": "33d82de7-bb9f-43e5-a9c7-3f702f08ddca",
+      "userid": "3ad52697-6d98-4d80-8273-084de55a86c0",
+      "title": "Favorites",
+      "songs": [
+        {
+          "id": "ebd6a2b9-857d-4b62-982b-a08014fbffb4",
+          "title": "A",
+          "artist": "A",
+          "duration": 1
+        },
+        {
+          "id": "6f3e791e-0fd8-4a62-a189-b067917eb388",
+          "title": "B",
+          "artist": "B",
+          "duration": 1
+        },
+        {
+          "id": "458f5e3b-df5d-4d8a-a6fc-6e4e46e5587b",
+          "title": "C",
+          "artist": "C",
+          "duration": 1
+        }
+      ],
+      "duration": 3
+    },
+    {
+      "id": "2f21bfe4-3245-4786-ae92-8d830b7baede",
+      "userid": "2b6f0989-7b7f-4a38-ad26-aa06b922d751",
+      "title": "Marges Playlist",
+      "songs": []
+    }
+  ]
+}

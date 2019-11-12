@@ -1,0 +1,29 @@
+<section class="ui stacked segment">
+  <h2 class="ui header">
+    Suggestions for you
+  </h2>
+  <table class="ui table">
+    <thead>
+      <tr>
+        <th>Song</th>
+        <th>Artist</th>
+        <th>Duration</th>
+      </tr>
+    </thead>
+    <tbody>
+      {{#each suggestions}}
+        <tr>
+          <td>
+            {{title}}
+          </td>
+          <td>
+            {{artist}}
+          </td>
+          <td>
+            {{duration}}
+          </td>
+        </tr>
+      {{/each}}
+    </tbody>
+  </table>
+</section>
