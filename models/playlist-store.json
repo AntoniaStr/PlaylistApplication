@@ -6,6 +6,47 @@
       "title": "Favorites",
       "songs": [
         {
+          "id": "65mPCrY32YMQlBnmWVrKNa",
+          "title": "shut up",
+          "artists": [
+            {
+              "id": "0Qnx1MPnHYt3jJCYrRFVwX",
+              "name": "Greyson Chance"
+            }
+          ],
+          "duration": "2:20"
+        },
+        {
+          "id": "4Jw3870ecfc9792hvVb7lT",
+          "title": "Face To Face",
+          "artists": [
+            {
+              "id": "5xkAtLTf309LAGZTbvULBn",
+              "name": "Ruel"
+            }
+          ],
+          "duration": "2:20"
+        },
+        {
+          "id": "6RRNNciQGZEXnqk8SQ9yv5",
+          "title": "You Need To Calm Down",
+          "artists": [
+            {
+              "id": "06HL4z0CvFAxyc27GXpf02",
+              "name": "Taylor Swift"
+            }
+          ],
+          "duration": "2:20"
+        }
+      ],
+      "duration": 8
+    },
+    {
+      "id": "61081d0d-5333-447e-9fae-d1450a58e519",
+      "userid": "3ad52697-6d98-4d80-8273-084de55a86c0",
+      "title": "Pop",
+      "songs": [
+        {
           "id": "7qEHsqek33rTcFNT9PFqLf",
           "title": "Someone You Loved",
           "artists": [
@@ -17,61 +58,48 @@
           "duration": "2:20"
         },
         {
-          "id": "21jGcNKet2qwijlDFuPiPb",
-          "title": "Circles",
+          "id": "1mpD5Q8IM32I4bF6eCpU74",
+          "title": "Up All Night",
           "artists": [
             {
-              "id": "246dkjvS1zLTtiykXe5h60",
-              "name": "Post Malone"
+              "id": "6LuN9FCkKOj5PcnpouEgny",
+              "name": "Khalid"
             }
           ],
           "duration": "2:20"
         },
         {
-          "id": "0TK2YIli7K1leLovkQiNik",
-          "title": "Señorita",
+          "id": "3GRSqlALWISqLeNncZMbpX",
+          "title": "Mean It",
           "artists": [
             {
-              "id": "7n2wHs1TKAczGzO7Dd2rGr",
-              "name": "Shawn Mendes"
+              "id": "5JZ7CnR6gTvEMKX4g70Amv",
+              "name": "Lauv"
             },
             {
-              "id": "4nDoRrQiYLoBzwC5BhVJzF",
-              "name": "Camilla Cabello"
+              "id": "49tQo2QULno7gxHutgccqF",
+              "name": "LANY"
             }
           ],
           "duration": "2:20"
         },
         {
-          "id": "5qmq61DAAOUaW8AUo8xKhh",
-          "title": "Truth Hurts",
+          "id": "4evmHXcjt3bTUHD1cvny97",
+          "title": "Beautiful People (feat. Khalid)",
           "artists": [
             {
-              "id": "56oDRnqbIiwx4mymNEv7dS",
-              "name": "Lizzo"
-            }
-          ],
-          "duration": "2:20"
-        },
-        {
-          "id": "1HfMVBKM75vxSfsQ5VefZ5",
-          "title": "Lose you to Love me",
-          "artists": [
+              "id": "6eUKZXaKkcviH0Ku9w2n3V",
+              "name": "Ed Sheeran"
+            },
             {
-              "id": "0C8ZW7ezQVs4URX5aX7Kqx",
-              "name": "Selena Gomez"
+              "id": "6LuN9FCkKOj5PcnpouEgny",
+              "name": "Khalid"
             }
           ],
           "duration": "2:20"
-        },
-        {
-          "id": "371be6f1-b14d-4af9-8ecb-19e4cbd2cba9",
-          "title": "a",
-          "artist": "a",
-          "duration": 2
         }
       ],
-      "duration": 12
+      "duration": 10
     }
   ]
 }

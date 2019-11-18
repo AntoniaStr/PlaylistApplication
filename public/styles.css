@@ -79,6 +79,14 @@ h1.ui.header  {
     background: #324f52;
 }
 
+.ui.form input[type=email]{
+    background: #324f52;
+}
+
+.ui.form input[type=password]{
+    background: #324f52;
+}
+
 .ui.button {
     background: #caa32e;
 }
