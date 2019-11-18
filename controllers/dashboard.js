@@ -21,6 +21,7 @@ const dashboard = {
       artist: spotifyArtist
     };
     response.render('dashboard', viewData);
+    console.log(viewData.playlists);
   },
   deletePlaylist(request, response){
     const playlistId = request.params.id;

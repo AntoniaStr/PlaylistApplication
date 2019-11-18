@@ -16,6 +16,22 @@ const song = {
         }) ();
 
     },
+
+    addSong(request, response){
+        const playlistId = request.params.playlist;
+
+        const newSong = {
+            id: request.body.id,
+            title: request.body.title,
+            artist: request.body.artist,
+            artistId: request.body.artistId,
+            duration: Number(request.body.duration),
+        };
+
+        playlistStore.addSong(playlistId, newSong);
+        response.redirect('/playlist/'+ playlistId);
+        logger.debug('New Song = ', newSong);
+    },
 };
 
 module.exports = song;

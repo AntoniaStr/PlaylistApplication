@@ -6,31 +6,66 @@
       "title": "Favorites",
       "songs": [
         {
-          "id": "ebd6a2b9-857d-4b62-982b-a08014fbffb4",
-          "title": "A",
-          "artist": "A",
-          "duration": 1
+          "id": "7qEHsqek33rTcFNT9PFqLf",
+          "title": "Someone You Loved",
+          "artists": [
+            {
+              "id": "4GNC7GD6oZMSxPGyXy4MNB",
+              "name": "Lewis Capaldi"
+            }
+          ],
+          "duration": "2:20"
         },
         {
-          "id": "6f3e791e-0fd8-4a62-a189-b067917eb388",
-          "title": "B",
-          "artist": "B",
-          "duration": 1
+          "id": "21jGcNKet2qwijlDFuPiPb",
+          "title": "Circles",
+          "artists": [
+            {
+              "id": "246dkjvS1zLTtiykXe5h60",
+              "name": "Post Malone"
+            }
+          ],
+          "duration": "2:20"
         },
         {
-          "id": "458f5e3b-df5d-4d8a-a6fc-6e4e46e5587b",
-          "title": "C",
-          "artist": "C",
-          "duration": 1
+          "id": "0TK2YIli7K1leLovkQiNik",
+          "title": "Señorita",
+          "artists": [
+            {
+              "id": "7n2wHs1TKAczGzO7Dd2rGr",
+              "name": "Shawn Mendes"
+            },
+            {
+              "id": "4nDoRrQiYLoBzwC5BhVJzF",
+              "name": "Camilla Cabello"
+            }
+          ],
+          "duration": "2:20"
+        },
+        {
+          "id": "5qmq61DAAOUaW8AUo8xKhh",
+          "title": "Truth Hurts",
+          "artists": [
+            {
+              "id": "56oDRnqbIiwx4mymNEv7dS",
+              "name": "Lizzo"
+            }
+          ],
+          "duration": "2:20"
+        },
+        {
+          "id": "1HfMVBKM75vxSfsQ5VefZ5",
+          "title": "Lose you to Love me",
+          "artists": [
+            {
+              "id": "0C8ZW7ezQVs4URX5aX7Kqx",
+              "name": "Selena Gomez"
+            }
+          ],
+          "duration": "2:20"
         }
       ],
-      "duration": 3
-    },
-    {
-      "id": "2f21bfe4-3245-4786-ae92-8d830b7baede",
-      "userid": "2b6f0989-7b7f-4a38-ad26-aa06b922d751",
-      "title": "Marges Playlist",
-      "songs": []
+      "duration": 11
     }
   ]
 }

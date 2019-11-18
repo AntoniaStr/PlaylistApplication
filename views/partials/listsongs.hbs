@@ -10,14 +10,18 @@
   <tbody>
     {{#each playlist.songs}}
       <tr>
+          <td>
+              <a href="../song/{{id}}">{{title}}</a>
+          </td>
+          <td>
+              {{#each artists}}
+                  <p><a href="../artist/{{id}}"> {{name}}  </a></p>
+              {{/each}}
+          </td>
         <td>
-            <a href="{{url}}">{{title}}</a>
-        </td>
-        <td>
-          {{artist}}
-        </td>
-        <td>
-          {{duration}}
+            <p>
+                {{duration}}
+            </p>
         </td>
         <td>
           <a href="/playlist/{{../playlist.id}}/deletesong/{{id}}" class="ui icon button">

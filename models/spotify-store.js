@@ -26,9 +26,17 @@ const spotifyStore = {
             //console.log(data.body);
             return data.body;
         } ).catch(function(error) { console.error(error); });
+    },
+
+    searchArtists(queryTerm) {
+        return spotifyApi.searchArtists(queryTerm, {limit: 5}).then(data => {
+            return data.body.artists.items; }).catch(function(error){console.error(error);});
+    },
+
+    searchTracks(queryTerm) {
+        return spotifyApi.searchTracks(queryTerm, {limit: 5}).then(data => {
+            return data.body.tracks.items; }).catch(function(error){console.error(error);});
     }
-
-
 };
 
 module.exports = spotifyStore;

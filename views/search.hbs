@@ -1,0 +1,40 @@
+{{> menu id="search"}}
+
+<section class="ui segment">
+    <form action="/search/search" method="POST">
+        <div class="ui input">
+            <input type="text" name="queryTerm" id="queryTerm" placeholder="Search....">
+        </div>
+        <button class="ui submit button">Search</button>
+    </form>
+    <section class="ui segment two column grid">
+        <section class="column">
+            <h3 class="ui header">
+                <p>Songs:</p>
+            </h3>
+            {{#each tracks}}
+                <div class="related">
+                    <a href="../song/{{id}}" class="ui label related_label">
+                        <i class="music icon"></i>
+                        {{name}}
+                        <div class="detail">{{artists.[0].name}}</div>
+                    </a>
+                </div>
+            {{/each}}
+        </section>
+        <section class="column">
+            <h3 class="ui header">
+                <p>Artists:</p>
+            </h3>
+            {{#each artists}}
+                <div class="related">
+                    <a href="../artist/{{id}}" class="ui image label related_label">
+                        <img src="{{images.[1].url}}">
+                        {{name}}
+                    </a>
+                </div>
+            {{/each}}
+        </section>
+    </section>
+</section>
+
