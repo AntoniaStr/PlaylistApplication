@@ -1,0 +1,25 @@
+
+{{> menu id="song"}}
+<section class="ui segment">
+    <section class="ui segment center">
+        <h1 class="ui header">
+            {{track.name}}
+        </h1>
+        <p> by
+            {{#each track.artists}}
+                <a href="../artist/{{id}}"> {{name}} </a>
+            {{/each}}
+        </p>
+
+        <img src="{{track.album.images.1.url}}">
+
+        <p>Duration: {{{'multiply' track.duration_ms}}} Minutes</p>
+        <audio  src="{{track.preview_url}}" type="audio/mp3" controls>
+            Your browser does not support the audio element.
+        </audio>
+
+
+        <p>Appears on album: <a href="../album/{{track.album.id}}"> {{track.album.name}} </a></p>
+    </section>
+</section>
+

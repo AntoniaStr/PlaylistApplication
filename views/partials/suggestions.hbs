@@ -1,29 +1,60 @@
 <section class="ui stacked segment">
-  <h2 class="ui header">
-    Suggestions for you
-  </h2>
-  <table class="ui table">
-    <thead>
-      <tr>
-        <th>Song</th>
-        <th>Artist</th>
-        <th>Duration</th>
-      </tr>
-    </thead>
-    <tbody>
-      {{#each suggestions}}
-        <tr>
-          <td>
-            {{title}}
-          </td>
-          <td>
-            {{artist}}
-          </td>
-          <td>
-            {{duration}}
-          </td>
-        </tr>
-      {{/each}}
-    </tbody>
-  </table>
+    <h2 class="ui header">
+        Suggestions for you
+    </h2>
+
+        <table class="ui table">
+            <thead>
+            <tr>
+                <th></th>
+                <th>Song</th>
+                <th>Artist</th>
+                <th></th>
+            </tr>
+            </thead>
+            <tbody>
+            {{#each suggestions}}
+                <tr>
+                    <td>
+                    </td>
+                    <td>
+                        <a href="../song/{{id}}">{{title}}</a>
+                    </td>
+                    <td>
+                        {{#each artists}}
+                            <p><a href="../artist/{{id}}"> {{name}}  </a></p>
+
+                        {{/each}}
+                    </td>
+                    <td>
+    <!--                    <select class="ui dropdown">-->
+    <!--                    </select>-->
+    <!--                    <script>-->
+    <!--                        $(document).ready(function () {-->
+
+    <!--                            $('.ui.dropdown').dropdown({-->
+    <!--                                values: [-->
+    <!--                                    {-->
+    <!--                                        name: 'Male',-->
+    <!--                                        value: 'male'-->
+    <!--                                    },-->
+    <!--                                    {-->
+    <!--                                        name: 'Female',-->
+    <!--                                        value: 'female',-->
+    <!--                                        selected: true-->
+    <!--                                    }-->
+    <!--                                ]-->
+    <!--                            });-->
+    <!--                        });-->
+
+    <!--                    </script>-->
+                        <a href="/playlist/{{../playlist.id}}/addsong/{{id}}" class="ui icon button">
+                            <i class="icon plus"></i>
+                        </a>
+                    </td>
+                </tr>
+            {{/each}}
+            </tbody>
+        </table>
+
 </section>

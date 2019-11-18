@@ -1,6 +1,58 @@
 {{> menu id="album"}}
-<h2 class="ui header">
-  Your Playlists
-</h2>
-{{> listplaylists}}
-{{> addplaylist}}
+
+<section class="ui segment">
+    <section class="ui segment center">
+        <h1 class="ui header">
+            {{album.name}}
+        </h1>
+        <p> by
+            {{#each album.artists}}
+                <a href="../artist/{{id}}"> {{name}} </a>
+            {{/each}}
+        </p>
+
+        <img src="{{album.images.1.url}}">
+    </section>
+
+    <section class="ui segment two column grid">
+        <section class="column">
+            <h3 class="ui header">
+                <p>Songs on Album:</p>
+            </h3>
+
+            <div class="ui list">
+                {{#each album.tracks}}
+                    {{#each this}}
+                        <div class="item">
+                            <img class="ui avatar image" src="{{../../album.images.1.url}}">
+                            <div class="content">
+                                <a href="../song/{{this.id}}"> {{this.name}}</a>
+                                <div>{{../../album.release_date}}</div>
+                            </div>
+                        </div>
+                    {{/each}}
+                {{/each}}
+            </div>
+        </section>
+
+        <section class="column">
+            <h3 class="ui header">
+                <p>Albums by  <a href="../artist/{{album.artists.0.id}}">{{album.artists.0.name}}</a></p>
+            </h3>
+            <div class="ui list">
+                {{#each moreAlbums}}
+                    {{#each this}}
+                        <div class="item">
+                            <img class="ui avatar image" src="{{images.1.url}}">
+                            <div class="content">
+                                <a href="../album/{{this.id}}">{{this.name}}</a>
+                                <div>{{album.release_date}}</div>
+                            </div>
+                        </div>
+                    {{/each}}
+                {{/each}}
+            </div>
+        </section>
+    </section>
+</section>
+

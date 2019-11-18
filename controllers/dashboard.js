@@ -4,6 +4,8 @@ const logger = require('../utils/logger');
 const uuid = require('uuid');
 const playlistStore = require('../models/playlist-store');
 const suggestionsStore = require('../models/suggestions-store');
+const spotifySong = require('./song.js');
+const spotifyArtist = require('./artist.js');
 const accounts = require ('./accounts.js');
 
 const dashboard = {
@@ -14,11 +16,11 @@ const dashboard = {
     const viewData = {
       title: 'Playlist Dashboard',
       playlists: playlistStore.getUserPlaylists(loggedInUser.id),
-      suggestions: suggestionsStore.getList()
+      suggestions: suggestionsStore.getList(),
+      track: spotifySong,
+      artist: spotifyArtist
     };
-    // logger.info('about to render', playlistStore.getAllPlaylists());
     response.render('dashboard', viewData);
-    console.log(suggestionsStore.getList());
   },
   deletePlaylist(request, response){
     const playlistId = request.params.id;

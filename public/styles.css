@@ -1,0 +1,89 @@
+body {
+    background: #141f20 !important;
+    color: white;
+}
+
+.ui.inverted.menu {
+    background: #0e3034;
+}
+
+.ui.grid.column {
+    margin-top: 50px;
+    background: rgba(0,0,0,0);
+    border: 0px;
+}
+.ui.segment {
+    margin-top: 50px;
+    background: #0e3034;
+}
+
+body > section > section > section.ui.segment.center {
+    text-align: center;
+}
+/*body > section > section > section > div {*/
+/*    text-align: center;*/
+/*}*/
+
+.ui.segment > section {
+    margin-top: 0px;
+    background: #113f44;
+}
+
+.ui.table {
+    background: #113f44;
+}
+
+.ui.table thead th{
+    background: #324f52;
+    color: white;
+}
+
+body > section > nav > div {
+    background: #0e3034;
+}
+
+p {
+    color: white;
+    font-size: 16px;
+}
+
+a {
+    color: #caa32e;
+    font-size: 16px;
+}
+
+a:hover {
+    color: #cc5014;
+}
+
+a:active {
+    color: #cc5014;
+}
+
+.ui.header {
+    color: white;
+
+}
+
+h1.ui.header  {
+    font-size: 3rem;
+    text-transform: uppercase;
+    color: #caa32e;
+}
+
+.ui.form .field>label {
+    color: white;
+}
+
+.ui.form input[type=text] {
+    background: #324f52;
+}
+
+.ui.button {
+    background: #caa32e;
+}
+
+.ui.button:hover {
+    background: #cc5014;
+}
+

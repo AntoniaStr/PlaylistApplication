@@ -7,6 +7,10 @@ const dashboard = require('./controllers/dashboard.js');
 const about = require('./controllers/about.js');
 const playlist = require('./controllers/playlist.js');
 const accounts = require('./controllers/accounts.js');
+const song = require('./controllers/song.js');
+const artist = require('./controllers/artist.js');
+const album = require('./controllers/album.js');
+
 
 router.get('/dashboard', dashboard.index);
 router.get('/dashboard/deleteplaylist/:id', dashboard.deletePlaylist);
@@ -24,5 +28,9 @@ router.get('/logout', accounts.logout);
 router.post('/register', accounts.register);
 router.post('/authenticate', accounts.authenticate);
 
+router.get('/song/:id', song.index);
+
+router.get('/artist/:id', artist.index);
+router.get('/album/:id', album.index);
 
 module.exports = router;
