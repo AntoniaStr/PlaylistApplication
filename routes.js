@@ -33,6 +33,7 @@ router.get('/song/:id', song.index);
 router.get('/artist/:id', artist.index);
 router.get('/album/:id', album.index);
 
+router.get('/search', search.index);
 router.post('/search/search', search.search);
 
 module.exports = router;

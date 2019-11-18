@@ -63,9 +63,15 @@
             }
           ],
           "duration": "2:20"
+        },
+        {
+          "id": "371be6f1-b14d-4af9-8ecb-19e4cbd2cba9",
+          "title": "a",
+          "artist": "a",
+          "duration": 2
         }
       ],
-      "duration": 11
+      "duration": 12
     }
   ]
 }

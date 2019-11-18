@@ -29,7 +29,7 @@ const search = {
 module.exports = search;
 
 function createData(response, tracks, artists){
-    console.log(track);
+
     const viewData = {
         title: 'Search Results',
         tracks: tracks,

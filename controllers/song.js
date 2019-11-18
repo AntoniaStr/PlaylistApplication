@@ -4,6 +4,7 @@ const uuid = require('uuid');
 const logger = require('../utils/logger');
 
 const SpotifyStore = require('../models/spotify-store');
+const playlistStore = require('../models/playlist-store');
 
 const song = {
     index(request, response) {
