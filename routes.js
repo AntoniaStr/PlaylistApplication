@@ -34,6 +34,6 @@ router.get('/artist/:id', artist.index);
 router.get('/album/:id', album.index);
 
 router.get('/search', search.index);
-router.post('/search/search', search.search);
+router.post('/search/result', search.result);
 
 module.exports = router;

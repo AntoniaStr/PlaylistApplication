@@ -19,7 +19,7 @@ const song = {
     },
 
     addSong(request, response){
-        const playlistId = request.params.playlist;
+        const playlistId = request.body.playlist;
 
         const newSong = {
             id: request.body.id,
@@ -28,7 +28,7 @@ const song = {
             artistId: request.body.artistId,
             duration: Number(request.body.duration),
         };
-
+        console.log(newSong);
         playlistStore.addSong(playlistId, newSong);
         response.redirect('/playlist/'+ playlistId);
         logger.debug('New Song = ', newSong);
@@ -40,7 +40,7 @@ module.exports = song;
 function createData(response, track){
     console.log(track);
     const viewData = {
-        title: track.name,
+        title: track.title,
         track: track
     };
     response.render('song', viewData);

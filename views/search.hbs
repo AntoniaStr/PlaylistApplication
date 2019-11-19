@@ -4,7 +4,7 @@
     <h3 class="ui header">
         Search for Songs or Artists
     </h3>
-    <form action="/search/search" method="POST">
+    <form action="/search/result" method="POST">
         <div class="ui input">
             <input type="text" name="queryTerm" id="queryTerm" placeholder="Search....">
         </div>
@@ -15,28 +15,31 @@
             <h3 class="ui header">
                 <p>Songs:</p>
             </h3>
-            {{#each tracks}}
-                <div class="related">
-                    <a href="../song/{{id}}" class="ui label related_label">
-                        <i class="music icon"></i>
-                        {{name}}
-                        <div class="detail">{{artists.[0].name}}</div>
-                    </a>
-                </div>
-            {{/each}}
+            <div class="ui list">
+                {{#each tracks}}
+                    <div class="item">
+                        <div class="content">
+                            <a href="../song/{{id}}">  {{name}}</a>
+                            by {{artists.[0].name}}
+                        </div>
+                    </div>
+                {{/each}}
+            </div>
         </section>
         <section class="column">
             <h3 class="ui header">
                 <p>Artists:</p>
             </h3>
-            {{#each artists}}
-                <div class="related">
-                    <a href="../artist/{{id}}" class="ui image label related_label">
-                        <img src="{{images.[1].url}}">
-                        {{name}}
-                    </a>
-                </div>
-            {{/each}}
+            <div class="ui list">
+                {{#each artists}}
+                        <div class="item">
+                            <img class="ui avatar image" src="{{images.[1].url}}">
+                            <div class="content">
+                                <a href="../song/{{id}}">  {{name}}</a>
+                            </div>
+                        </div>
+                {{/each}}
+            </div>
         </section>
     </section>
 </section>

@@ -15,14 +15,15 @@ app.use(bodyParser.urlencoded({ extended: false, }));
 app.use(express.static('public'));
 app.use(fileUpload());
 app.engine('.hbs', exphbs({
+  extname: '.hbs',
+  defaultLayout: 'main',
   helpers: {
+
     multiply: function(duration_ms) {
       let duration = duration_ms / 60000;
       return duration.toFixed(2);
     }
-  },
-  extname: '.hbs',
-  defaultLayout: 'main',
+  }
 }));
 app.set('view engine', '.hbs');
 

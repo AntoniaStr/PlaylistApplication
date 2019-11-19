@@ -12,8 +12,8 @@ const search = {
         response.render('search', viewData);
     },
 
-    search(request, response) {
-        const queryTerm = request.params.queryTerm;
+    result(request, response) {
+        const queryTerm = request.body.queryTerm;
         let tracks = {};
         let artists = {};
 
