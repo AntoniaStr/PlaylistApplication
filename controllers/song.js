@@ -24,14 +24,15 @@ const song = {
         const newSong = {
             id: request.body.id,
             title: request.body.title,
-            artist: request.body.artist,
-            artistId: request.body.artistId,
+            artists: [{
+                id: request.body.artistId,
+                name: request.body.artist,
+            }],
             duration: Number(request.body.duration),
         };
         console.log(newSong);
         playlistStore.addSong(playlistId, newSong);
         response.redirect('/playlist/'+ playlistId);
-        logger.debug('New Song = ', newSong);
     },
 };
 
